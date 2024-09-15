@@ -35,7 +35,7 @@ app.post("/api/tasks", async(req, res) => {
         res.status(500).json({msg: error.message})
         //console.log(error);
     }
-})
+});
 
 //Get/Read Data
 app.get("/api/tasks", async (req, res) => {
@@ -45,9 +45,8 @@ app.get("/api/tasks", async (req, res) => {
     } catch {
         res.status(500).json({msg: error.message});
     }
-})
+});
 
-//Get/Read Data
 
 const PORT = process.env.PORT || 5000;
 
