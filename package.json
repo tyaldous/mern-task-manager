@@ -6,7 +6,7 @@
     "start": "node backend/server.js",
     "backend": "nodemon backend/server.js",
     "frontend": "npm start --prefix frontend",
-    "both": "concurrently \"npm run backend\" \"npm run frontend\""
+    "app": "concurrently \"npm run backend\" \"npm run frontend\""
   },
   "keywords": [],
   "author": "",
